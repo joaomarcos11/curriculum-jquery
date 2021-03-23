@@ -28,6 +28,10 @@ body {
 }
 
 .pageContainer nav li {
+  list-style: none;
+}
+
+.pageContainer nav li {
   margin: 1rem auto;
   text-align: center;
   /* border: 0.5px solid red; */
@@ -115,7 +119,7 @@ body {
 
 .pageContainer #personalInfo .personContact .contactButtons a {
   background-color: hotpink;
-  padding: 1rem 0.5rem;
+  padding: 1rem;
   font-size: 2rem;
   border-radius: 5px;
 }
@@ -124,14 +128,194 @@ body {
   margin-right: 2rem;
 }
 
+/* ToDo: pequena div antes do título preenchida 
+         para dar um efeito legal, alinhado com foto e texto */
 
+.pageContainer main h2 {
+  font-size: 2.8rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2rem 0 2rem 8rem;
+}
+/* ToDO: */
 
-/* Media Queries */
-
-@media(max-width: 1080px){
+.pageContainer main h2::before {
 
 }
 
-@media(max-width: 720px){
+/* SOBRE MIM */
+.pageContainer main #aboutMe p {
+  /* border: 1px solid red; */
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  padding: 1rem 4rem 1rem 4rem;
+}
 
+.pageContainer main #aboutMe p + p {
+  padding: 0 4rem 1rem 4rem;
+}
+
+/* HABILIDADES */
+
+.pageContainer main #skills .skills-grid {
+  padding: 1rem 4rem 1rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pageContainer main #skills .skills-grid h3 {
+  font-style: normal;
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+.pageContainer main #skills .skills-grid ul {
+  padding: 1rem 0 1rem 1rem;
+}
+
+.pageContainer main #skills .skills-grid ul li {
+  margin-left: 2rem;
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  padding-right: 2rem;
+}
+
+/* EXPERIENCIA PROFISSIONAL */
+
+.pageContainer main #jobs-exp .timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageContainer main #jobs-exp .timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.pageContainer main #jobs-exp .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  /* background-color: #f0f0f5; */
+  width: 50%;
+}
+
+.pageContainer main #jobs-exp .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.pageContainer main #jobs-exp .left {
+  left: 0;
+}
+
+.pageContainer main #jobs-exp .right {
+  left: 50%;
+}
+
+.pageContainer main #jobs-exp .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.pageContainer main #jobs-exp .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.pageContainer main #jobs-exp .right::after {
+  left: -16px;
+}
+
+.pageContainer main #jobs-exp .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+.pageContainer main #jobs-exp .content h3 {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  padding-bottom: 0.5rem;
+}
+
+.pageContainer main #jobs-exp .content p {
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1080px){
+
+}
+
+@media screen and (max-width: 720px){
+  .pageContainer main #jobs-exp .timeline::after {
+    left: 31px;
+  }
+
+  .pageContainer main #jobs-exp .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .pageContainer main #jobs-exp .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .pageContainer main #jobs-exp .left::after,
+  .pageContainer main #jobs-exp .right::after {
+    left: 15px;
+  }
+
+  .pageContainer main #jobs-exp .right {
+    left: 0%;
+  }
 }
