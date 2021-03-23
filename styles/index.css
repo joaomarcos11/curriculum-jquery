@@ -228,10 +228,12 @@ body {
 
 .pageContainer main #jobs-exp .left {
   left: 0;
+  text-align: right;
 }
 
 .pageContainer main #jobs-exp .right {
   left: 50%;
+  text-align: left;
 }
 
 .pageContainer main #jobs-exp .left::before {
