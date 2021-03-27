@@ -1,10 +1,10 @@
 body {
   display: flex;
-  justify-content: center; /* centraliza o .pageContainer */
+  justify-content: center; /* centraliza o .page-container */
   /* align-items: center; */
 }
 
-.pageContainer {
+.page-container {
   /* margin: 4rem; */
   /* width: 112rem;  */
 
@@ -15,7 +15,7 @@ body {
   justify-content: center;
 }
 
-.pageContainer nav {
+.page-container nav {
   height: 24rem;
   min-width: 30rem;
   width: 25%;
@@ -24,57 +24,60 @@ body {
   padding: 2rem;
   /* margin-right: 4rem; */
   margin-right: 3%;
-  background-color: aqua;
+  background-color: var(--bg-menu);
 }
 
-.pageContainer nav li {
+.page-container nav li {
   list-style: none;
 }
 
-.pageContainer nav li {
+.page-container nav li {
   margin: 1rem auto;
   text-align: center;
   /* border: 0.5px solid red; */
 }
 
-.pageContainer nav a {
+.page-container nav a {
   font-size: 1.4rem;
-  color: black;
+  color: var(--text-menu);
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.18rem;
   transition: all 0.1s;
 }
 
-.pageContainer nav a:hover {
-  color: grey;
+.page-container nav a:hover {
+  /* ToDo testar */
+  color: var(--text-menu);
   font-weight: 400;
 }
 
-.pageContainer main {
-  background-color: grey;
+.page-container main {
+  /* background-color: grey; */
   width: 72%;
   min-width: 86rem;
 }
 
-.pageContainer main h1 {
-  font-size: 3.6rem;
-  color: black;
+.page-container main h1 {
+  background-color: var(--bg-secondary);
+  font-size: 4.2rem;
+  color: var(--heading-primary);
   text-transform: uppercase;
+  letter-spacing: 0.15rem;
   font-weight: 700;
-  padding: 2rem 0 2rem 4rem;
+  padding: 4rem 0 4rem 4rem;
 }
 
 /* PERSONAL INFO */
-.pageContainer #personalInfo {
+.page-container #personal-info {
+  background-color: var(--bg-terciary);
   display: flex;
   align-items: center;
   /* justify-content: space-around; */
   padding: 2rem 4rem 2rem 4rem;
-  background-color: #cccccc;
 }
 
-.pageContainer #personalInfo img {
+.page-container #personal-info img {
   border-radius: 50%;
   height: 25rem;
   width: 25em;
@@ -82,18 +85,18 @@ body {
   /* sem querer deu um eveito legal na foto*/
 }
 
-.pageContainer #personalInfo > div {
+.page-container #personal-info > div {
   margin-left: 15%;
 }
 
-.pageContainer #personalInfo .personName {
+.page-container #personal-info .person-name {
   font-size: 2.6rem;
   font-weight: 500;
   letter-spacing: 0.1rem;
   padding-bottom: 1.5rem;
 }
 
-.pageContainer #personalInfo .personRole {
+.page-container #personal-info .person-role {
   font-size: 2rem;
   font-weight: 400;
   font-style: italic;
@@ -101,10 +104,10 @@ body {
   padding-bottom: 1.5rem;
 }
 
-.pageContainer #personalInfo .personAddress,
-.pageContainer #personalInfo .personCity,
-.pageContainer #personalInfo .personContact .personEmail,
-.pageContainer #personalInfo .personContact .personPhone {
+.page-container #personal-info .person-address,
+.page-container #personal-info .person-city,
+.page-container #personal-info .person-contact .person-email,
+.page-container #personal-info .person-contact .person-phone {
   font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
@@ -112,72 +115,89 @@ body {
 }
 
 
-.pageContainer #personalInfo .personContact .contactButtons {
+.page-container #personal-info .person-contact .contact-buttons {
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
 
-.pageContainer #personalInfo .personContact .contactButtons a {
-  background-color: hotpink;
+.page-container #personal-info .person-contact .contact-buttons a {
+  background-color: var(--btn-primary);
   padding: 1rem;
   font-size: 2rem;
   border-radius: 5px;
 }
 
-.pageContainer #personalInfo .personContact .contactButtons > a {
+.page-container #personal-info .person-contact .contact-buttons > a {
   margin-right: 2rem;
 }
 
-/* ToDo: pequena div antes do título preenchida 
-         para dar um efeito legal, alinhado com foto e texto */
+.page-container main .aboutme-container,
+.page-container main .skills-container,
+.page-container main .jobsexp-container,
+.page-container main .graduationexp-container {
+  padding: 4rem 4rem 3rem 4rem;
+}
 
-.pageContainer main h2 {
+.page-container main h2 {
   font-size: 2.8rem;
-  color: black;
+  color: var(--heading-secondary);
   text-transform: uppercase;
   font-weight: 700;
-  padding: 2rem 0 2rem 8rem;
+  letter-spacing: 0.1rem;
+  padding-bottom: 2rem;
 }
-/* ToDO: */
 
-.pageContainer main h2::before {
-
+.page-container main h2::before {
+  content: "";
+  display: inline-block;
+  background: var(--dot-clr);
+  height: 2rem;
+  width: 2.6rem;
+  margin-right: 2rem;
 }
 
 /* SOBRE MIM */
-.pageContainer main #aboutMe p {
+.page-container main #about-me {
+  background-color: var(--bg-secondary);
+}
+
+.page-container main #about-me p {
   /* border: 1px solid red; */
   font-style: normal;
   font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
-  padding: 1rem 4rem 1rem 4rem;
+  /* padding: 1rem 4rem 1rem 4rem; */
 }
 
-.pageContainer main #aboutMe p + p {
-  padding: 0 4rem 1rem 4rem;
+.page-container main #about-me p + p {
+  /* padding: 0 4rem 1rem 4rem; */
 }
 
 /* HABILIDADES */
 
-.pageContainer main #skills .skills-grid {
-  padding: 1rem 4rem 1rem 4rem;
+.page-container main #skills {
+  background-color: var(--bg-terciary);
+}
+
+.page-container main #skills .skills-grid {
+  /* padding: 1rem 4rem 1rem 4rem; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.pageContainer main #skills .skills-grid h3 {
+.page-container main #skills .skills-grid h3 {
   font-style: normal;
   font-size: 2.4rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
 }
 
-.pageContainer main #skills .skills-grid ul {
-  padding: 1rem 0 1rem 1rem;
+.page-container main #skills .skills-grid ul {
+  /* padding: 1rem 0 1rem 1rem; */
 }
 
-.pageContainer main #skills .skills-grid ul li {
+.page-container main #skills .skills-grid ul li {
   margin-left: 2rem;
   font-style: normal;
   font-size: 1.8rem;
@@ -186,26 +206,37 @@ body {
   padding-right: 2rem;
 }
 
-/* EXPERIENCIA PROFISSIONAL */
+/* EXPERIENCIA PROFISSIONAL e ACADÊMICA*/
 
-.pageContainer main #jobs-exp .timeline {
+.page-container main #jobs-exp {
+  background-color: var(--bg-secondary);
+}
+
+.page-container main #graduation-exp {
+  background-color: var(--bg-terciary);
+}
+
+.page-container main #jobs-exp .timeline,
+.page-container main #graduation-exp .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.pageContainer main #jobs-exp .timeline::after {
+.page-container main #jobs-exp .timeline::after,
+.page-container main #graduation-exp .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: white;
+  background-color: var(--baloon-clr);
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
 }
 
-.pageContainer main #jobs-exp .container {
+.page-container main #jobs-exp .container,
+.page-container main #graduation-exp .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
@@ -213,30 +244,34 @@ body {
   width: 50%;
 }
 
-.pageContainer main #jobs-exp .container::after {
+.page-container main #jobs-exp .container::after,
+.page-container main #graduation-exp .container::after {
   content: '';
   position: absolute;
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: white;
-  border: 4px solid #FF9F55;
+  background-color: var(--circle-clr);
+  border: 4px solid var(--border-circle);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
 }
 
-.pageContainer main #jobs-exp .left {
+.page-container main #jobs-exp .left,
+.page-container main #graduation-exp .left {
   left: 0;
   text-align: right;
 }
 
-.pageContainer main #jobs-exp .right {
+.page-container main #jobs-exp .right,
+.page-container main #graduation-exp .right {
   left: 50%;
   text-align: left;
 }
 
-.pageContainer main #jobs-exp .left::before {
+.page-container main #jobs-exp .left::before,
+.page-container main #graduation-exp .left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -244,12 +279,13 @@ body {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid white;
+  border: medium solid var(--baloon-clr);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
+  border-color: transparent transparent transparent var(--baloon-clr);
 }
 
-.pageContainer main #jobs-exp .right::before {
+.page-container main #jobs-exp .right::before,
+.page-container main #graduation-exp .right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -257,23 +293,26 @@ body {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid white;
+  border: medium solid var(--baloon-clr);
   border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+  border-color: transparent var(--baloon-clr) transparent transparent;
 }
 
-.pageContainer main #jobs-exp .right::after {
+.page-container main #jobs-exp .right::after,
+.page-container main #graduation-exp .right::after {
   left: -16px;
 }
 
-.pageContainer main #jobs-exp .content {
+.page-container main #jobs-exp .content,
+.page-container main #graduation-exp .content {
   padding: 20px 30px;
-  background-color: white;
+  background-color: var(--baloon-clr);
   position: relative;
   border-radius: 6px;
 }
 
-.pageContainer main #jobs-exp .content h3 {
+.page-container main #jobs-exp .content h3,
+.page-container main #graduation-exp .content h3 {
   font-style: normal;
   font-size: 2rem;
   font-weight: 500;
@@ -281,43 +320,55 @@ body {
   padding-bottom: 0.5rem;
 }
 
-.pageContainer main #jobs-exp .content p {
+.page-container main #jobs-exp .content p,
+.page-container main #graduation-exp .content p {
   font-style: normal;
   font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 0.05rem;
 }
 
-/* Media Queries */
+.page-container main footer {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  font-size: 1.4rem;
+  height: 4rem;
+  padding-left: 4rem;
+  /* margin-top: 4rem; */
+}
+
+
+/**** *** Media Queries *** ****/
 
 @media (max-width: 1080px){
 
 }
 
 @media screen and (max-width: 720px){
-  .pageContainer main #jobs-exp .timeline::after {
+  .page-container main #jobs-exp .timeline::after {
     left: 31px;
   }
 
-  .pageContainer main #jobs-exp .container {
+  .page-container main #jobs-exp .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  .pageContainer main #jobs-exp .container::before {
+  .page-container main #jobs-exp .container::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
 
-  .pageContainer main #jobs-exp .left::after,
-  .pageContainer main #jobs-exp .right::after {
+  .page-container main #jobs-exp .left::after,
+  .page-container main #jobs-exp .right::after {
     left: 15px;
   }
 
-  .pageContainer main #jobs-exp .right {
+  .page-container main #jobs-exp .right {
     left: 0%;
   }
 }

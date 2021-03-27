@@ -8,20 +8,27 @@
 
   /* variaveis */
   --bg-primary: #F8FFE5;
-  --text-primary: #F8FFE5;
+  /* --text-primary: #F8FFE5; */
 
-  --clr-primary: #28ABB9;
-  --clr-primary-lighter: #5CD8E5;
-  --clr-primary-stronger: #0F7799;
+  --bg-secondary: #68BA61;
+  --bg-terciary: #66C47B;
 
-  --clr-secondary: #2D6187;
-  --clr-secondary-lighter: #5397AD;
-  --clr-secondary-stronger: #123C66;
+  --bg-footer: #928DF7;
 
-  --clr-terciary: #D4B331;
-  --clr-terciary-lighter: #FAE05F;
-  --clr-terciary-stronger: #AD830E;
+  --bg-menu: #928DF7;
+  --text-menu: #F8FFE5;
+  
+  
+  --text-primary: 	#0e1111;
+  --heading-primary: 	#0e1111;
+  --heading-secondary: 	#0e1111;
+  --dot-clr: 	#0e1111;
 
+  --baloon-clr: #928DF7;
+  --circle-clr: #66C47B;
+  --border-circle: #928DF7;
+
+  --btn-primary: #928DF7;
 
 }
 
