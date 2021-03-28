@@ -5,7 +5,14 @@
 }
 
 :root{
-  /* ToDo Fazer Linear Gradiente entre as sections */
+  /* breakpoints */
+
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 916px;
+  --breakpoint-lg: 1058px;
+  --breakpoint-xl: 1303px;
+
+
 
   /* variaveis */
 
@@ -56,38 +63,10 @@
   --btn-text: #18254F;
 
   /* *** FIM TEMA AZUL *** */
-
-
-  /* *** TEMA TESTE *** */
-
-  /* --bg-primary: #E9F5D0; */
-
-  /* --bg-secondary: #68BA61;
-  --bg-terciary: #62D17A; */
-  /* --bg-terciary: #66C47B; */
-
-  /* --bg-footer: #928DF7;
-
-  --bg-menu: #928DF7;
-  --text-menu: #F8FFE5; */
-  
-  /* --text-primary: 	#E9F5D0;
-  --heading-primary: 	#E9F5D0;
-  --heading-secondary: 	#E9F5D0; */
-
-  /* --dot-clr: 	#0e1111; */
-
-  /* --baloon-clr: #928DF7;
-  --circle-clr: #66C47B;
-  --border-circle: #928DF7;
-
-  --btn-primary: #928DF7; */
-
-  /* *** FIM TEMA TESTE *** */
-
 }
 
-@media(min-width: 1080px){
+/* @media(min-width: 1080px){ */
+@media(min-width: 721px){
   html{
       /* 1rem = 10px */
       font-size:62.5%;
