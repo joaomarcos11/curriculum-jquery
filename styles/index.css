@@ -1,3 +1,10 @@
+/*
+ToDo
+- Colocar dot no titulo principal com largura maior
+- Retirar Dot e centralizar titulo em screen menores
+*/
+
+
 body {
   display: flex;
   justify-content: center; /* centraliza o .page-container */
@@ -17,6 +24,9 @@ body {
   
   display: flex;
   justify-content: center;
+
+  box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 
+              0.4rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-container nav {
@@ -39,6 +49,9 @@ body {
   padding: 2rem;
   margin-right: 2%;
   background-color: var(--bg-menu);
+
+  box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 
+              0.4rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-container nav li {
@@ -60,10 +73,22 @@ body {
   transition: all 0.1s;
 }
 
+/* .menu-active controlado por JQuery */
+.menu-active {
+  font-size: 1.5rem !important;
+  /* text-decoration: underline; */
+  color: var(--text-menu) !important;
+  font-weight: 400 !important;
+}
+
 .page-container nav a:hover {
+  font-size: 1.5rem;
+  /* text-decoration: underline; */
   color: var(--text-menu);
   font-weight: 400;
 }
+
+
 
 .page-container main {
   width: 73%;
@@ -72,7 +97,7 @@ body {
 
 .page-container main h1 {
   background-image: linear-gradient(to right, var(--bg-secondary), var(--bg-terciary));
-  font-size: 4.2rem;
+  font-size: 4.8rem;
   color: var(--heading-primary);
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -99,6 +124,9 @@ body {
 
   height: 25rem;
   width: 25rem;
+
+  box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 
+              0.4rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
 
   /* width: 35%;
   height: auto;
@@ -153,23 +181,32 @@ body {
 .page-container #personal-info .person-contact .contact-buttons {
   margin-top: 3rem;
   margin-bottom: 1rem;
+  display: flex;
+
 }
 
 .page-container #personal-info .person-contact .contact-buttons a {
+  display: block;
+  width: 12rem;
+  text-align: center;
   background-color: var(--btn-primary);
   color: var(--btn-text);
-  padding: 1rem;
+  padding: 1.4rem;
   font-size: 2rem;
   border-radius: 5px;
   transition: all 0.3s;
+
+  box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 
+              0.4rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .page-container #personal-info .person-contact .contact-buttons a:hover {
   background-color: var(--btn-hover);
 }
 
-.page-container #personal-info .person-contact .contact-buttons > a {
-  margin-right: 2rem;
+.page-container #personal-info .person-contact .contact-buttons a + a {
+  margin-left: 2rem;
 }
 
 .page-container main .aboutme-container,
@@ -180,7 +217,7 @@ body {
 }
 
 .page-container main h2 {
-  font-size: 2.8rem;
+  font-size: 3.2rem;
   color: var(--heading-secondary);
   text-transform: uppercase;
   font-weight: 700;
@@ -192,7 +229,7 @@ body {
   content: "";
   display: inline-block;
   background: var(--dot-clr);
-  height: 2rem;
+  height: 2.2rem;
   width: 2.6rem;
   margin-right: 2rem;
 }
@@ -270,6 +307,8 @@ body {
   /* background-color: var(--bg-terciary); */
   background-image: linear-gradient(to right, var(--bg-terciary), var(--bg-secondary));
   border-bottom: 0.1rem solid var(--border-clr);
+
+  color: var(--text-secondary);
 }
 
 .page-container main #jobs-exp .timeline,
@@ -373,7 +412,15 @@ body {
   font-size: 2rem;
   font-weight: 500;
   letter-spacing: 0.05rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+.page-container main #jobs-exp .content h4,
+.page-container main #graduation-exp .content h4 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  padding-bottom: 2rem;
 }
 
 .page-container main #jobs-exp .content p,
@@ -432,6 +479,11 @@ body {
     text-align: center;
   }
 
+  .page-container #personal-info .person-contact .contact-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
   .page-container main #skills .skills-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -456,9 +508,9 @@ body {
   .page-container main #jobs-exp .container::before,
   .page-container main #graduation-exp .container::before {
     left: 60px;
-    border: medium solid white;
+    border: medium solid var(--baloon-clr);
     border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+    border-color: transparent var(--baloon-clr) transparent transparent;
   }
 
   .page-container main #jobs-exp .left::after,

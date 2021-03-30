@@ -16,28 +16,11 @@
 
   /* variaveis */
 
-  /* *** TEMA AZUL *** */
-  --bg-primary: #E1E9F5;
-
+  /* *** TEMA 01 AZUL *** */
+  /* --bg-primary: #E1E9F5;
   --bg-secondary: #18254F;
   --bg-terciary: #212F5F;
-  /* --bg-terciary: #1D2B58; */
-  /* --bg-terciary: #213766; */
-  /* --bg-terciary: #174B5C; */
-
-  /* --text-primary:#F8FFE5;
-  --heading-primary:#F8FFE5;
-  --heading-secondary:#F8FFE5;
-  --dot-clr: 	#F8FFE5;
-
-  --border-clr: #F8FFE5; */
-  
-  /* --text-primary:#F8FFE5;
-  --heading-primary:#D6A41F;
-  --heading-secondary:#D6A41F;
-  --dot-clr: 	#D6A41F;
-
-  --border-clr: #D6A41F; */
+  --bg-footer: #C28113;
 
   --text-primary:#F8FFE5;
   --text-secondary:#101936;
@@ -45,11 +28,8 @@
   --heading-primary:#F8FFE5;
   --heading-secondary:#F8FFE5;
   --dot-clr: 	#C28113;
-
   --border-clr: #C28113;
 
-
-  --bg-footer: #C28113;
 
   --bg-menu: #928DF7;
   --text-menu: #F8FFE5;
@@ -60,9 +40,39 @@
 
   --btn-primary: #C28113;
   --btn-hover: #D6A41F;
-  --btn-text: #18254F;
+  --btn-text: #18254F; */
 
-  /* *** FIM TEMA AZUL *** */
+  /* *** FIM TEMA 01 AZUL *** */
+
+  /* *** TEMA 02 AZUL *** */
+  --bg-primary: #E8F1F7;
+  --bg-secondary: #023047;
+  --bg-terciary: #023047;
+  --bg-footer: #FB8500;
+
+  --text-primary:#E8F1F7;
+  --text-secondary:#023047;
+
+  --heading-primary:#FFB703;
+  --heading-secondary:#FFB703;
+  --dot-clr: 	#FB8500;
+  --border-clr: #FB8500;
+
+
+  --bg-menu: #023047;
+  --text-menu: #FFB703;
+
+  --baloon-clr: #8ECAE6;
+  --circle-clr: #FB8500;
+  --border-circle: #8ECAE6;
+
+  --btn-primary: #FB8500;
+  --btn-hover: #FFB703;
+  --btn-text: #023047;
+
+  /* *** FIM TEMA 02 AZUL *** */
+
+
 }
 
 /* @media(min-width: 1080px){ */
