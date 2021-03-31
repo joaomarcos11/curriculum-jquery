@@ -182,12 +182,49 @@ body {
   margin-top: 3rem;
   margin-bottom: 1rem;
   display: flex;
-
+  flex-direction: column;
 }
 
+.page-container #personal-info .person-contact .contact-buttons .contact-social,
+.page-container #personal-info .person-contact .contact-buttons .contact-profiles {
+  display: flex;
+}
+
+.page-container #personal-info .person-contact .contact-buttons .contact-profiles { 
+  margin-top: 2rem;
+}
+
+.page-container #personal-info .person-contact .contact-buttons .logo {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 2rem;
+  width: 2rem;
+  margin: auto 1rem;
+}
+
+.page-container #personal-info .person-contact .contact-buttons .logo-whatsapp {
+  background-image: url("../assets/logo-whatsapp.png");
+}
+
+.page-container #personal-info .person-contact .contact-buttons .logo-email {
+  background-image: url("../assets/logo-email.png");
+}
+
+.page-container #personal-info .person-contact .contact-buttons .logo-github {
+  background-image: url("../assets/logo-github.png");
+}
+
+.page-container #personal-info .person-contact .contact-buttons .logo-linkedin {
+  background-image: url("../assets/logo-linkedin.png");
+}
+
+
 .page-container #personal-info .person-contact .contact-buttons a {
-  display: block;
-  width: 12rem;
+  /* display: block; */
+  display: flex;
+  /* justify-content: space-evenly; */
+  width: 16rem;
   text-align: center;
   background-color: var(--btn-primary);
   color: var(--btn-text);
@@ -481,7 +518,8 @@ body {
 
   .page-container #personal-info .person-contact .contact-buttons {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    align-items: center;
   }
 
   .page-container main #skills .skills-grid {
