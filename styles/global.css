@@ -45,7 +45,7 @@
   /* *** FIM TEMA 01 AZUL *** */
 
   /* *** TEMA 02 AZUL *** */
-  --bg-primary: #E8F1F7;
+  /* --bg-primary: #E8F1F7;
   --bg-secondary: #023047;
   --bg-terciary: #023047;
   --bg-footer: #FB8500;
@@ -68,7 +68,36 @@
 
   --btn-primary: #FB8500;
   --btn-hover: #FFB703;
-  --btn-text: #023047;
+  --btn-text: #023047; */
+
+  /* *** FIM TEMA 02 AZUL *** */
+
+  /* *** TEMA 02 AZUL *** */
+  --bg-primary: #e0fbfc;
+  --bg-secondary: #3d5a80;
+  --bg-terciary: #3d5a80;
+  --bg-footer: #98c1d9;
+
+  --text-primary:#e0fbfc;
+  --text-secondary:#293241;
+
+  --heading-primary:#e0fbfc;
+  --heading-secondary:#e0fbfc;
+  --dot-clr: 	#ee6c4d;
+  --border-clr: #ee6c4d;
+
+
+  --bg-menu: #293241;
+  --text-menu: #e0fbfc;
+  --text-menu-hover: #ee6c4d;
+
+  --baloon-clr: #e0fbfc;
+  --circle-clr: #ee6c4d;
+  --border-circle: #98c1d9;
+
+  --btn-primary: #ee6c4d;
+  --btn-hover: #ee6c4d;
+  --btn-text: #293241;
 
   /* *** FIM TEMA 02 AZUL *** */
 

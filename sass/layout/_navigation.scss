@@ -1,0 +1,52 @@
+#nav-menu {
+    display: flex;
+    flex-direction: column;
+
+    height: 27rem;
+    width: 25%;
+    padding: 2rem;
+    margin-right: 2%;
+
+    background-color: $bg-menu;
+    
+    li {
+        list-style: none;
+        margin: 1.5rem auto;
+        text-align: center;
+    }
+
+    a {
+        color: $text-menu;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 300;
+        letter-spacing: 0.18rem;
+        transition: all 0.1s;
+
+        &:hover {
+            font-size: 1.5rem;
+            color: $text-menu-hover;
+            font-weight: 400;
+        }
+    }
+
+    /* .menu-active controlado por JQuery */
+    .menu-active {
+        font-size: 1.5rem !important;
+        color: $text-menu-hover !important;
+        font-weight: 400 !important;
+    }
+
+    @media screen and (max-width: $breakpoint-xl){
+        height: 30rem;
+    }
+
+    @media screen and (max-width: $breakpoint-lg){
+        height: 32rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        display: none;
+    }
+}

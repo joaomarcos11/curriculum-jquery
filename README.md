@@ -4,4 +4,5 @@ Projeto para praticar o uso de:
 - CSS 3
 - JavaScript ES6+
 - JQuery
+- SASS
 

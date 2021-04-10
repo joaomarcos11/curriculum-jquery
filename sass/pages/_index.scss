@@ -1,0 +1,409 @@
+main {
+    width: 73%;
+
+    h1 {
+        background-image: linear-gradient(to right, $bg-secondary, $bg-terciary);
+        color: $heading-primary;
+        font-size: 4.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        padding: 4rem 0 4rem 4rem;
+        border-bottom: 0.1rem solid $border-clr;
+
+        @media screen and (max-width: $breakpoint-lg){
+            text-align: center;
+        }
+
+        @media screen and (max-width: $breakpoint-sm){
+            font-size: 3.8rem;
+            text-align: center;
+            padding: 4rem 0;
+        }
+    }
+
+    #personal-info {
+        background-image: linear-gradient(to right, $bg-terciary, $bg-secondary);
+        color: $text-primary;
+        
+        // flexCenter
+        display: flex;
+        align-items: center;
+        padding: 4rem 4rem 4rem 4rem;
+        border-bottom: 0.1rem solid $border-clr;
+
+        img { 
+            border-radius: 50%;
+
+            height: 25rem;
+            width: 25rem;
+          
+            box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 
+                        0.4rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+            
+            @media screen and (max-width: $breakpoint-lg){
+                margin-bottom: 3rem;
+            }
+            
+        }
+
+        .personal-data {
+            margin-left: 15%;
+
+            .person-name {
+                font-size: 2.6rem;
+                font-weight: 500;
+                letter-spacing: 0.1rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .person-role {
+                font-size: 2rem;
+                font-weight: 400;
+                font-style: italic;
+                letter-spacing: 0.05rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .person-address,
+            .person-city,
+            .person-email,
+            .person-phone {
+                font-size: 1.8rem;
+                font-weight: 400;
+                letter-spacing: 0.05rem;
+                padding-bottom: .5rem;
+            }
+
+            .contact-buttons {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+
+                .contact-profiles,
+                .contact-social {
+                    display: flex;
+                }
+
+                .contact-profiles {
+                    margin-top: 2rem;
+                }
+
+                .logo {
+                    display: inline-block;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 2rem;
+                    width: 2rem;
+                    margin: auto 1rem;
+                }
+
+                .logo-whatsapp {
+                    background-image: url("../assets/logo-whatsapp.png");
+                }
+
+                .logo-email {
+                    background-image: url("../assets/logo-email.png");
+                }
+
+                .logo-github {
+                    background-image: url("../assets/logo-github.png");
+                }
+
+                .logo-linkedin {
+                    background-image: url("../assets/logo-linkedin.png");
+                }
+
+                a {
+                    display: flex;
+                    background-color: $btn-primary;
+                    width: 16rem;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $btn-text;
+                    padding: 1.4rem;
+                    font-size: 2rem;
+                    border-radius: 5px;
+                    transition: all 0.3s;
+
+                    box-shadow: 0.2rem 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.2), 
+                                0.4rem 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.2);
+                    
+                    &:hover {
+                        background-color: $btn-hover;
+                    }
+
+                    & + a {
+                        margin-left: 2rem;
+                    }
+                }
+
+                @media screen and (max-width: $breakpoint-lg){
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-lg){
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        @media screen and (max-width: $breakpoint-lg){
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+    .aboutme-container,
+    .skills-container,
+    .jobsexp-container,
+    .graduationexp-container {
+        padding: 4rem 4rem 6rem 4rem;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+        color: $heading-secondary;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.25rem;
+        padding-bottom: 4rem;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            background: $dot-clr;
+            height: 2.2rem;
+            width: 2.6rem;
+            margin-right: 2rem;
+        }
+    }
+
+    #about-me {
+        background-image: linear-gradient(to right, $bg-secondary, $bg-terciary);
+        border-bottom: 0.1rem solid $border-clr;
+      
+        color: $text-primary;
+
+        p {
+            font-style: normal;
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 0.05rem;
+        }
+    }
+
+    #skills {
+        background-image: linear-gradient(to right, $bg-terciary, $bg-secondary);
+        border-bottom: 0.1rem solid $border-clr;
+      
+        color: $text-primary;
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h3 {
+                font-style: normal;
+                font-size: 2.4rem;
+                font-weight: 400;
+                letter-spacing: 0.05rem;
+                margin-bottom: 1rem;
+            }
+
+            li {
+                margin-left: 2rem;
+                font-style: normal;
+                font-size: 1.8rem;
+                font-weight: 400;
+                letter-spacing: 0.05rem;
+                padding-right: 2rem;
+            }
+
+            @media screen and (max-width: $breakpoint-lg){
+                display: grid;
+                grid-template-columns: 1fr;
+
+                section + section {
+                    margin-top: 4rem;
+                }
+            }
+        }
+    }
+
+    #jobs-exp {
+        background-image: linear-gradient(to right, $bg-secondary, $bg-terciary);
+    }
+
+    #graduation-exp {
+        background-image: linear-gradient(to right, $bg-terciary, $bg-secondary);
+    }
+
+    #jobs-exp,
+    #graduation-exp {
+        border-bottom: 0.1rem solid $border-clr;
+        color: $text-secondary;
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 6px;
+                background-color: $baloon-clr;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3px;
+
+                @media screen and (max-width: $breakpoint-lg){
+                    left: 31px;
+                }
+            }
+        }
+
+        .container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                right: -17px;
+                background-color: $circle-clr;
+                border: 4px solid $border-circle;
+                top: 15px;
+                border-radius: 50%;
+                z-index: 1;
+            }
+
+            @media screen and (max-width: $breakpoint-lg){
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+
+                &::before {
+                    left: 60px;
+                    border: medium solid $baloon-clr;
+                    border-width: 10px 10px 10px 0;
+                    border-color: transparent $baloon-clr transparent transparent;
+                }
+            }
+        }
+
+        .left {
+            left: 0;
+            text-align: right;
+
+            &::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                right: 30px;
+                border: medium solid $baloon-clr;
+                border-width: 10px 0 10px 10px;
+                border-color: transparent transparent transparent $baloon-clr;
+            }
+
+            &::after{
+                @media screen and (max-width: $breakpoint-lg){
+                    left: 15px; 
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-lg){
+                left: 0%;
+                text-align: left;
+            }
+        }
+
+        .right {
+            left: 50%;
+            text-align: left;
+
+            &::before {
+                content: " ";
+                height: 0;
+                position: absolute;
+                top: 22px;
+                width: 0;
+                z-index: 1;
+                left: 30px;
+                border: medium solid $baloon-clr;
+                border-width: 10px 10px 10px 0;
+                border-color: transparent $baloon-clr transparent transparent;
+            }
+
+            &::after {
+                left: -16px;
+
+                @media screen and (max-width: $breakpoint-lg){
+                    left: 15px; 
+                }
+            }
+
+            @media screen and (max-width: $breakpoint-lg){
+                left: 0%;
+                text-align: left;
+            }
+        }
+
+        .content {
+            padding: 20px 30px;
+            background-color: $baloon-clr;
+            position: relative;
+            border-radius: 6px;
+
+            h3 {
+                font-style: normal;
+                font-size: 2rem;
+                font-weight: 500;
+                letter-spacing: 0.05rem;
+                padding-bottom: 2rem;
+            }
+
+            h4 {
+                font-size: 1.8rem;
+                font-weight: 700;
+                letter-spacing: 0.05rem;
+                padding-bottom: 2rem;
+            }
+
+            p {
+                font-style: normal;
+                font-size: 1.8rem;
+                font-weight: 400;
+                letter-spacing: 0.05rem;
+            }
+        }
+    }
+
+    footer {
+        background-color: $bg-footer;
+        display: flex;
+        align-items: center;
+        font-size: 1.4rem;
+        height: 4rem;
+        padding-left: 4rem;
+      
+        color: $text-secondary;
+    }
+
+    @media screen and (max-width: $breakpoint-sm){
+        width: 100%;
+    }
+}
